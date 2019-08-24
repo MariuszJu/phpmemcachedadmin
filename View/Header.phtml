@@ -9,7 +9,7 @@
 </head>
 <body>
 <div style="margin:0pt auto; width:1000px; clear:both;">
-        <div style="font-weight:bold;font-size:1.2em;">PHPMemcachedAdmin <sup><?php echo CURRENT_VERSION; ?></sup>
+    <div style="font-weight:bold;font-size:1.2em;"><a style='color: black;' href='/'>PHPMemcachedAdmin</a> <sup><?php echo CURRENT_VERSION; ?></sup>
         </div>
         <div class="header corner full-size padding" style="text-align:center;margin-top:5px;">
 <?php
@@ -55,6 +55,7 @@ if(basename($_SERVER['PHP_SELF']) == 'configure.php')
         <a href="configure.php">Edit Configuration</a>
 <?php
 } ?>
+        | <a href='keys.php'>Show cached items</a>
     </div>
 <?php
 if (is_writable($_ini->get('file_path')) === false) {
